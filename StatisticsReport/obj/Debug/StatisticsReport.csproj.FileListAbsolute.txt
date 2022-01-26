@@ -1,0 +1,16 @@
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\StatisticsReport.exe.config
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\StatisticsReport.exe
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\StatisticsReport.pdb
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.SuggestedBindingRedirects.cache
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\MainWindow.g.cs
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\App.g.cs
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport_MarkupCompile.cache
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport_MarkupCompile.lref
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\MainWindow.baml
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.g.resources
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.exe
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.pdb
