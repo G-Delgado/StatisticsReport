@@ -25,9 +25,45 @@ namespace StatisticsReport
     {
         String[] rows = null;
         DataTable dt = new DataTable();
+        String[] departments = null;
         public MainWindow()
         {
             InitializeComponent();
+            departments = new string []{"Amazonas",
+                "Antioquia",
+                "Arauca",
+                "Atlántico",                
+                "Bolívar",
+                "Boyacá",
+                "Caldas",
+                "Caqueta",
+                "Casanare",
+                "Cauca",
+                "Cesar",
+                "Chocó",
+                "Córdoba",
+                "Cundinamarca",
+                "Guainiía",
+                "Guaviare",
+                "Huila",
+                "La Guajira",
+                "Magdalena",
+                "Meta",
+                "Nariño",
+                "Norte de Santander",
+                "Putumayo",
+                "Quindío",
+                "Risaralda",
+                "San Andrés y Providencia",
+                "Santander",
+                "Sucre",
+                "Tolima",
+                "Valle del Cauca",
+                "Vaupés",
+                "Vichada"};
+
+            cbDepartamentos.ItemsSource = departments;
+
             //mainDataGrid.ItemsSource = dt.AsDataView();
             
         }
@@ -63,6 +99,22 @@ namespace StatisticsReport
             //Console.WriteLine(rows[2].Split(',')[4]);
 
             return dt;
+        }
+
+        private void Button_Filtar(object sender, RoutedEventArgs e)
+        {
+            dt.Rows.Clear();
+            for (var i = 1; i < rows.Length; i++)
+            {                
+                // The last column is't working
+                String[] parts = rows[i].Split(',');                
+                if (parts[2].Equals(cbDepartamentos.Text, StringComparison.OrdinalIgnoreCase))
+                {
+                    dt.Rows.Add(parts);
+                }                
+            }
+            mainDataGrid.ItemsSource = dt.AsDataView();
+
         }
     }
 }
