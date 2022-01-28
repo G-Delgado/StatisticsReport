@@ -9,8 +9,9 @@
         WindowStartupLocation="CenterScreen">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Button Content="Importar" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Height="31" Width="70" Click="Button_Click"/>
-        <Label x:Name="labelToChange" Content="../" HorizontalAlignment="Left" Margin="96,29,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelToChange" Content="../" Margin="316,29,464,0" VerticalAlignment="Top"/>
         <DataGrid x:Name="mainDataGrid" d:ItemsSource="{d:SampleData ItemCount=20}" Margin="10,80,10,10"  />
+        <ComboBox HorizontalAlignment="Left" Margin="100,24,0,0" VerticalAlignment="Top" Width="195" Height="31"/>
 
     </Grid>
 </Window>
