@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using System.IO;
+using System.Data;
 
 namespace StatisticsReport
 {
@@ -20,11 +23,13 @@ namespace StatisticsReport
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+        String[] rows = null;
+        DataTable dt = new DataTable();
         public MainWindow()
         {
             InitializeComponent();
-            labelToChange.Content = "I changed, boy!";
+            //mainDataGrid.ItemsSource = dt.AsDataView();
+            
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,7 +39,33 @@ namespace StatisticsReport
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog opf = new OpenFileDialog();
+            //opf.Filter = "Excel Files | *.xls;*.xlsx;*.xlsm;
+            opf.Title = "Import Data";
 
+            if (opf.ShowDialog() == true)
+            {
+            labelToChange.Content = opf.FileName;
+            mainDataGrid.ItemsSource =loadData(opf.FileName).AsDataView();
+            }
+        }
+
+        private DataTable loadData(string filePath)
+        {
+            rows = File.ReadAllText(filePath).Split('\n');
+            string[] columns = rows.First().Split(',');
+            foreach(string column in columns)
+            {
+                dt.Columns.Add(column);
+            }
+
+            for(var i = 1; i < rows.Length; i++)
+            {
+                // The last column is't working
+                dt.Rows.Add(rows[i].Split(','));
+            }
+
+            return dt;
         }
     }
 }
