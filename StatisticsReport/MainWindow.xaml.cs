@@ -31,7 +31,10 @@ namespace StatisticsReport
             //mainDataGrid.ItemsSource = dt.AsDataView();
             
         }
+        private void mainDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
@@ -47,8 +50,10 @@ namespace StatisticsReport
 
         private DataTable loadData(string filePath)
         {
-            rows = File.ReadAllText(filePath).Split('\n');
+            //rows = File.ReadAllText(filePath).Split('\n');
+            rows = File.ReadAllLines(filePath);
             string[] columns = rows.First().Split(',');
+            columns[4] = "Tipo";
             foreach(string column in columns)
             {
                 dt.Columns.Add(column);
@@ -59,6 +64,8 @@ namespace StatisticsReport
                 // The last column is't working
                 dt.Rows.Add(rows[i].Split(','));
             }
+
+            //Console.WriteLine(rows[2].Split(',')[4]);
 
             return dt;
         }
