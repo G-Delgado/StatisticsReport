@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\Debug\
+D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\Release\
 StatisticsReport
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\App.
 13-1310406943
 MainWindow.xaml;
 
-False
+True
 

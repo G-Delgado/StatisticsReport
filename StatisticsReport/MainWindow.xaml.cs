@@ -31,27 +31,22 @@ namespace StatisticsReport
             //mainDataGrid.ItemsSource = dt.AsDataView();
             
         }
-        private void mainDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            //opf.Filter = "Excel Files | *.xls;*.xlsx;*.xlsm;
+            OpenFileDialog opf = new OpenFileDialog();            
             opf.Title = "Import Data";
 
-            if (opf.ShowDialog() == true)
-            {
-            labelToChange.Content = opf.FileName;
-            mainDataGrid.ItemsSource =loadData(opf.FileName).AsDataView();
+            if (opf.ShowDialog() == true){
+                labelToChange.Content = opf.FileName;
+                mainDataGrid.ItemsSource =loadData(opf.FileName).AsDataView();
+                labelToChange.Content = " Se han importado los datos";
             }
         }
 
         private DataTable loadData(string filePath)
         {
             //rows = File.ReadAllText(filePath).Split('\n');
-            rows = File.ReadAllLines(filePath);
+            rows = File.ReadAllLines(filePath);//Lee todas las lineas del archivo
             string[] columns = rows.First().Split(',');
             columns[4] = "Tipo";
             foreach(string column in columns)
