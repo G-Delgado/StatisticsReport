@@ -26,9 +26,16 @@ namespace StatisticsReport
     /// 
     public partial class MainWindow : Window
     {
-        String[] rows = null;
-        DataTable dt = new DataTable();
-        String[] departments = null;
+        private String[] rows = null;
+
+        private DataTable dt = new DataTable();
+
+        private String[] departments = null;
+        private SeriesCollection SeriesCollection { get; set; }
+        private string[] Labels { get; set; }
+        private Func<double, string> Formatter { get; set; }
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -71,9 +78,7 @@ namespace StatisticsReport
 
         }
 
-        public SeriesCollection SeriesCollection { get; set; }
-        public string[] Labels { get; set; }
-        public Func<double, string> Formatter { get; set; }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
