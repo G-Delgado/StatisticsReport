@@ -132,8 +132,14 @@ namespace StatisticsReport
     
         private  void Show_New_Window(object sender, RoutedEventArgs e)
         {
-            Window1 wn = new Window1();
+            if (rows == null)
+            {
+                labelToChange.Content = "No se ha importado el archivo para el gráfico!";
+            } else
+            {
+            Window1 wn = new Window1(rows);
             wn.Show();
+            }
         }
     }
 }
