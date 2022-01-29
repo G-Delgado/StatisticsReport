@@ -36,6 +36,7 @@ namespace StatisticsReport
                 {
                     dict[type] = 1;
                 }
+
             }
 
             SeriesCollection = new SeriesCollection
@@ -47,9 +48,9 @@ namespace StatisticsReport
                 }
             };
 
-            Console.WriteLine(dict["Municipio"]);
+            /*Console.WriteLine(dict["Municipio"]);
             Console.WriteLine(dict["Isla"]);
-            Console.WriteLine(dict["Área no municipalizada"]);
+            Console.WriteLine(dict["Área no municipalizada"]);*/
 
             //adding series will update and animate the chart automatically
             /*SeriesCollection.Add(new RowSeries

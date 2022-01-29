@@ -23,6 +23,7 @@ namespace StatisticsReport
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
         String[] rows = null;
