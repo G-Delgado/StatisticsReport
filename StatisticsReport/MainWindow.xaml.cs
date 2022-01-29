@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
 using System.Data;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace StatisticsReport
 {
@@ -65,9 +67,14 @@ namespace StatisticsReport
             cbDepartamentos.ItemsSource = departments;
 
             //mainDataGrid.ItemsSource = dt.AsDataView();
-            
+
         }
-         private void Button_Click(object sender, RoutedEventArgs e)
+
+        public SeriesCollection SeriesCollection { get; set; }
+        public string[] Labels { get; set; }
+        public Func<double, string> Formatter { get; set; }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();            
             opf.Title = "Import Data";
@@ -103,18 +110,30 @@ namespace StatisticsReport
 
         private void Button_Filtar(object sender, RoutedEventArgs e)
         {
-            dt.Rows.Clear();
-            for (var i = 1; i < rows.Length; i++)
-            {                
-                // The last column is't working
-                String[] parts = rows[i].Split(',');                
-                if (parts[2].Equals(cbDepartamentos.Text, StringComparison.OrdinalIgnoreCase))
-                {
-                    dt.Rows.Add(parts);
-                }                
+            if(rows == null)
+            {
+                labelToChange.Content = "No se ha importado el archivo!";
+            } else
+            {
+                dt.Rows.Clear();
+                for (var i = 1; i < rows.Length; i++)
+                {                
+                    // The last column is't working
+                    String[] parts = rows[i].Split(',');                
+                    if (parts[2].Equals(cbDepartamentos.Text, StringComparison.OrdinalIgnoreCase))
+                    {
+                        dt.Rows.Add(parts);
+                    }                
+                }
+                mainDataGrid.ItemsSource = dt.AsDataView();
             }
-            mainDataGrid.ItemsSource = dt.AsDataView();
 
+        }
+    
+        private  void Show_New_Window(object sender, RoutedEventArgs e)
+        {
+            Window1 wn = new Window1();
+            wn.Show();
         }
     }
 }

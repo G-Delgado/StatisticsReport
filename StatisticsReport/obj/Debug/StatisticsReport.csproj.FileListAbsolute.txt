@@ -30,3 +30,12 @@ D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\
 D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.CoreCompileInputs.cache
 D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.exe
 D:\Archivos_de_programa\ReposVisualStudio\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.pdb
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.dll
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.pdb
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.xml
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\StatisticsReport.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\Window1.g.cs
+C:\Users\USUARIO\Desktop\Proyectos\Universidad\CSharp\StatisticsReport\StatisticsReport\obj\Debug\Window1.baml
