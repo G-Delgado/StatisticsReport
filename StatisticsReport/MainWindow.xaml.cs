@@ -26,6 +26,9 @@ namespace StatisticsReport
     /// 
     public partial class MainWindow : Window
     {
+
+        private Window1 wn = null;
+
         private String[] rows = null;
 
         private DataTable dt = new DataTable();
@@ -143,7 +146,7 @@ namespace StatisticsReport
                 labelToChange.Content = "No se ha importado el archivo para el gráfico!";
             } else
             {
-            Window1 wn = new Window1(rows);
+            wn = new Window1(rows);
             wn.Show();
             }
         }
