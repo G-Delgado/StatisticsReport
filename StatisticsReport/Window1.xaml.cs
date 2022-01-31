@@ -21,10 +21,6 @@ namespace StatisticsReport
     /// </summary>
     public partial class Window1 : Window
     {
-        private SeriesCollection SeriesCollection { get; set; }
-        private string[] Labels { get; set; }
-        private Func<double, string> Formatter { get; set; }
-
 
         public Window1(string[] rows)
         {
@@ -73,7 +69,10 @@ namespace StatisticsReport
             DataContext = this;
 
         }
+        public SeriesCollection SeriesCollection { get; set; }
+        public string[] Labels { get; set; }
+        public Func<double, string> Formatter { get; set; }
 
-       
+
     }
 }
